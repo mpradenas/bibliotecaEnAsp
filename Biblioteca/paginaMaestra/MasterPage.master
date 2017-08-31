@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta charset="utf-8" />    
+    <title>biblioteca</title>
+    <asp:ContentPlaceHolder id="head" runat="server" />
+         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          
+          <link rel="stylesheet" href="<%=ResolveClientUrl("~")%>/estilos/css/bootstrap.css"/>
+          <link rel="stylesheet" href="<%=ResolveClientUrl("~")%>/estilos/css/bootstrap-theme.css"/>
+          <script type="text/javascript" src="<%=ResolveClientUrl("~")%>/js/jquery-3.2.1.js?2"></script>
+   
+</head>
+<body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Biblioteca</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Libros</a></li>
+            <li><a href="#">Préstamo de libros</a></li>
+          </ul>
+        </div>
+      </nav>    
+
+        <asp:ContentPlaceHolder id="contenido_principal" runat="server">
+           
+        </asp:ContentPlaceHolder>
+         <footer style="text-align:center;">
+
+                <small>MPradenasDevelops 2017 </small>
+            
+        </footer>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
